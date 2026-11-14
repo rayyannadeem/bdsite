@@ -1,0 +1,1250 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#fff0f5" />
+    <meta
+      name="description"
+      content="A tiny pink birthday world made especially for you."
+    />
+    <title>Happy Birthday jaanu♡</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <main class="entry-screen is-visible" id="entry-screen" aria-labelledby="entry-title">
+        <div class="entry-scene" aria-hidden="true">
+          <div class="entry-sky"></div>
+          <div class="entry-wall entry-wall-left"></div>
+          <div class="entry-wall entry-wall-right"></div>
+          <div class="entry-porch"></div>
+          <div class="entry-overhang"></div>
+          <div class="door-frame">
+            <div class="doorway-glow"></div>
+            <div class="entry-door">
+              <div class="door-panel door-panel-top"></div>
+              <div class="door-panel door-panel-middle"></div>
+              <div class="door-panel door-panel-bottom"></div>
+              <div class="door-handle"><span></span></div>
+            </div>
+          </div>
+          <div class="door-mat"></div>
+        </div>
+
+        <div class="entry-copy">
+          <p class="entry-kicker">a little surprise is waiting inside</p>
+          <h1 id="entry-title">knock knock<span>♡</span></h1>
+          <p class="entry-instruction">ring the bell to come in</p>
+        </div>
+
+        <button class="doorbell-button" id="doorbell-button" type="button" aria-label="Ring the doorbell">
+          <span class="doorbell-plate" aria-hidden="true">
+            <span class="doorbell-glow"></span>
+            <span class="doorbell-ring"></span>
+            <span class="doorbell-dot"></span>
+          </span>
+          <span class="doorbell-label">ring me</span>
+        </button>
+        <p class="entry-status" id="entry-status" aria-live="polite">the door is waiting for you</p>
+      </main>
+
+      <div class="confetti" aria-hidden="true"></div>
+
+      <div class="ambient ambient-one" aria-hidden="true"></div>
+      <div class="ambient ambient-two" aria-hidden="true"></div>
+      <div class="ambient ambient-three" aria-hidden="true"></div>
+
+      <div class="doodle doodle-paw paw-one" aria-hidden="true">♥</div>
+      <div class="doodle doodle-paw paw-two" aria-hidden="true">✦</div>
+      <div class="doodle doodle-heart heart-one" aria-hidden="true">♡</div>
+      <div class="doodle doodle-heart heart-two" aria-hidden="true">♥</div>
+      <div class="doodle doodle-star star-one" aria-hidden="true">✦</div>
+      <div class="doodle doodle-star star-two" aria-hidden="true">✧</div>
+      <div class="doodle doodle-ribbon ribbon-one" aria-hidden="true">⌁</div>
+      <div class="doodle doodle-ribbon ribbon-two" aria-hidden="true">⌁</div>
+
+      <svg class="cat cat-left" viewBox="0 0 140 130" role="img" aria-label="A tiny cat doodle">
+        <use href="#cat-sitting" />
+      </svg>
+      <svg class="cat cat-right" viewBox="0 0 140 130" aria-hidden="true">
+        <use href="#cat-face" />
+      </svg>
+      <svg class="cat cat-bottom" viewBox="0 0 140 130" aria-hidden="true">
+        <use href="#cat-sitting" />
+      </svg>
+
+      <main class="hero landing-screen" id="landing-screen" aria-labelledby="birthday-title" aria-hidden="true" hidden>
+        <div class="top-note"><span class="sparkle">✦</span> made with a crap ton of love and ai <span class="sparkle">✦</span></div>
+
+        <div class="hero-card">
+          <div class="card-sticker sticker-one" aria-hidden="true">♡</div>
+          <div class="card-sticker sticker-two" aria-hidden="true">✦</div>
+
+          <div class="cake-icon" aria-hidden="true">
+            <span class="flame"></span>
+            <span class="candle"></span>
+            <span class="cake-top"></span>
+            <span class="cake-body"></span>
+            <span class="cake-plate"></span>
+          </div>
+
+          <p class="eyebrow">today is a MASSIVE day</p>
+          <h1 id="birthday-title">Happy Birthday<span>!!</span></h1>
+          <p class="subtitle">ITS YOUR BIG 16th <span>(17th heh)</span> <span class="cake-emoji">🎂</span></p>
+          <p class="welcome-copy">took me a while to make this btw<br />but you deserve the world</p>
+
+          <button class="celebrate-button" id="celebrate-button" type="button">
+            <span>click me to celebrate ♡</span>
+            <span class="button-shine" aria-hidden="true"></span>
+          </button>
+
+          <div class="tiny-signature">with love, your goat👀<span>♡</span></div>
+        </div>
+
+        <div class="scroll-hint" aria-hidden="true">
+          <span class="scroll-dot"></span>
+          <span>something sick is waiting</span>
+          <span class="scroll-arrow">↓</span>
+        </div>
+      </main>
+
+      <main class="hero question-screen" id="question-screen" aria-labelledby="question-title" aria-hidden="true" hidden>
+        <div class="hero-card question-card">
+          <div class="paper-header">
+            <div>
+              <p class="paper-kicker">BIRTHDAY STUDIES</p>
+              <p class="paper-title">A Very Important Quiz</p>
+            </div>
+            <span class="paper-badge">MOCK TEST</span>
+          </div>
+
+          <div class="paper-meta">
+            <span>SUBJECT: BIRTHDAY EXCITEMENT</span>
+            <span>QUESTION 01 / 01</span>
+          </div>
+
+          <div class="question-heading">
+            <span class="question-number">01</span>
+            <div>
+              <p class="question-type">MULTIPLE CHOICE QUESTION</p>
+              <h2 id="question-title">are you even excited<br />for ur birthday?</h2>
+            </div>
+          </div>
+
+          <p class="question-copy">Choose the answer that best describes your current level of birthday excitement.</p>
+
+          <div class="answer-buttons" role="group" aria-label="Choose your answer">
+            <button class="answer-button" type="button" data-answer="yes">
+              <span class="option-key">A</span>
+              <span class="option-text">YEAHHHH</span>
+              <span class="option-mark" aria-hidden="true">○</span>
+              <span class="button-shine" aria-hidden="true"></span>
+            </button>
+            <button class="answer-button answer-button-soft" type="button" data-answer="no">
+              <span class="option-key">B</span>
+              <span class="option-text">nah osns</span>
+              <span class="option-mark" aria-hidden="true">○</span>
+              <span class="button-shine" aria-hidden="true"></span>
+            </button>
+          </div>
+
+          <p class="question-response" id="question-response" aria-live="polite" hidden>idr care abt that ur gonna love this</p>
+          <button class="prove-button" id="prove-button" type="button" hidden>oh yeah? prove it</button>
+          <div class="paper-footer"><span>GOOD LUCK, CUTIE</span><span class="footer-dots">• • •</span><span>1 POINT</span></div>
+        </div>
+
+        <div class="scroll-hint" aria-hidden="true">
+          <span class="scroll-dot"></span>
+          <span>answer sheet submitted</span>
+          <span class="scroll-arrow">♡</span>
+        </div>
+      </main>
+
+      <main class="landscape-screen" id="landscape-screen" aria-labelledby="world-map-title" aria-hidden="true" hidden>
+        <svg id="world-map" viewBox="0 0 1200 760" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="world-map-title world-map-desc">
+              <title id="world-map-title">li hol</title>
+              <desc id="world-map-desc">A smiling sun, a cottage, a winding river, and a pair of cats are clickable.</desc>
+              <defs>
+                <pattern id="paper-grain" width="32" height="32" patternUnits="userSpaceOnUse">
+                  <circle cx="5" cy="8" r=".9" fill="#8d826e" opacity=".13" />
+                  <circle cx="22" cy="25" r=".7" fill="#8d826e" opacity=".1" />
+                  <path d="M2 28 10 26M25 4l5-1" stroke="#8d826e" stroke-width=".7" opacity=".08" />
+                </pattern>
+                <filter id="soft-shadow" x="-30%" y="-30%" width="160%" height="160%">
+                  <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#75644d" flood-opacity=".16" />
+                </filter>
+                <linearGradient id="sky-wash" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#cfe7e5" />
+                  <stop offset="1" stop-color="#e8efd8" />
+                </linearGradient>
+                <linearGradient id="river-wash" x1="0" y1="0" x2="1" y2="0">
+                  <stop offset="0" stop-color="#8fc7c3" />
+                  <stop offset="1" stop-color="#6eaead" />
+                </linearGradient>
+              </defs>
+
+              <rect class="scene-paper" width="1200" height="760" />
+              <rect class="scene-sky" width="1200" height="440" />
+              <g class="world-guide" id="world-guide" aria-label="Explore this area. 0 of 4 places discovered">
+                <text class="world-guide-title" x="600" y="68" text-anchor="middle">EXPLORE THIS AREA</text>
+                <text class="world-guide-counter" id="world-counter" x="600" y="105" text-anchor="middle">0/4</text>
+              </g>
+              <path class="back-hill" d="M20 395Q135 300 255 370T510 350q132-100 274-2 117 81 220 10 93-64 176-10v132H20Z" />
+              <path class="front-hill" d="M20 448q134-105 292-6 125 78 253 10 151-81 287 15 119 83 328-25v298H20Z" />
+              <path class="ground" d="M20 523q174-88 322-16 153 75 300-4 166-89 310 14 109 78 228 21v202H20Z" />
+              <rect class="paper-overlay" width="1200" height="760" />
+
+              <g class="world-cloud cloud-one" aria-hidden="true">
+                <path d="M80 170q8-34 42-25 16-35 51-7 40-17 49 25h23v11H69v-11Z" />
+              </g>
+              <g class="world-cloud cloud-two" aria-hidden="true">
+                <path d="M890 156q10-29 38-22 14-28 43-4 31-12 40 22h19v10H879v-6Z" />
+              </g>
+
+              <g class="world-object object-sun" data-object="sun" role="button" tabindex="0" aria-label="Explore the smiling sun">
+                <title>Explore the smiling sun</title>
+                <circle class="object-hit" cx="224" cy="135" r="72" />
+                <g class="sun-rays">
+                  <path d="M224 78Q224 69 224 58M197 87Q191 78 186 70M177 108Q168 103 158 98M170 135Q160 135 149 135M177 162Q168 167 158 172M197 183Q191 192 186 200M224 192Q224 202 224 213M251 183Q257 192 262 200M271 162Q280 167 290 172M278 135Q288 135 299 135M271 108Q280 103 290 98M251 87Q257 78 262 70" />
+                </g>
+                <circle class="sun-body" cx="224" cy="135" r="47" />
+                <path class="sun-face" d="M202 132q4-7 8 0m25 0q4-7 8 0m-30 17q11 10 22 0" />
+                <circle class="sun-cheek" cx="197" cy="147" r="5" /><circle class="sun-cheek" cx="250" cy="147" r="5" />
+              </g>
+
+              <g class="world-object object-house" data-object="house" role="button" tabindex="0" aria-label="Explore the cozy cottage">
+                <title>Explore the cozy cottage</title>
+                <rect class="object-hit" x="310" y="178" width="305" height="270" rx="20" />
+                <path class="house-shadow" d="M335 415h250q18 0 18 18v13H317v-13q0-18 18-18Z" />
+                <path class="house-body" d="M347 286h220v135H347Z" />
+                <path class="house-roof" d="m323 295 132-103 139 103-13 20-126-90-118 90Z" />
+                <path class="house-roof-line" d="M341 296 455 207l123 89" />
+                <rect class="house-door" x="440" y="337" width="40" height="84" rx="5" />
+                <circle class="door-knob" cx="470" cy="380" r="3" />
+                <g class="house-window window-left"><rect x="370" y="330" width="40" height="37" rx="3" /><path d="M390 330v37M370 348h40" /></g>
+                <g class="house-window window-right"><rect x="507" y="330" width="40" height="37" rx="3" /><path d="M527 330v37M507 348h40" /></g>
+                <path class="chimney-smoke" d="M530 224q-12-21 5-33 17-12 3-29m20 54q-9-16 4-25 13-9 4-22" />
+                <path class="house-detail" d="M367 421v-17m180 17v-17M333 422h249" />
+              </g>
+
+              <g class="world-object object-river" data-object="river" role="button" tabindex="0" aria-label="Explore the winding river">
+                <title>Explore the winding river</title>
+                <path class="river-hit" d="M775 276q-28 68-31 111 44 89-6 155-48 63-74 142" />
+                <path class="river-body" d="M747 294C733 330 713 355 721 389c8 35 49 64 31 105-19 43-62 78-40 125 16 34-24 75-69 121h218c44-48 67-88 38-131-35-52-68-88-74-126-6-36 28-72 21-110-6-36-35-64-43-79Z" />
+                <path class="river-spring" d="M762 295q5-18 13-29 9 11 14 29" />
+                <g class="river-ripples"><path d="M743 359q31-10 55 2M725 408q36-11 70 2M744 473q-37-11-70 2M718 551q42-14 84 2M679 641q44-13 91 3" /></g>
+                <path class="river-highlight" d="M777 318q-28 49 0 88 18 31-9 72M799 522q-29 42-4 78" />
+              </g>
+
+              <g class="world-object object-cats" data-object="cats" role="button" tabindex="0" aria-label="Explore the two cats">
+                <title>Explore the two cats</title>
+                <rect class="object-hit" x="145" y="485" width="320" height="155" rx="34" />
+                <g class="cat-one" aria-hidden="true">
+                <path class="cat-ground-shadow" d="M153 623q54-18 104 0-48 18-104 0Z" />
+                <path class="storybook-cat cat-orange" d="M178 612q-17-47 6-76l-5-38 30 24q27-9 48 4l28-27-2 42q26 41-2 71-32 34-76 20-18-5-27-20Z" />
+                <path class="cat-stripe" d="M190 523l17 17m1-29 13 21m18-11 14 16" />
+                <path class="cat-expression" d="M198 558q3-7 7 0m26 0q3-7 7 0m-23 17q7 7 14 0" />
+                <path class="cat-tail tail-one" d="M267 598q34 10 29-26-3-17-19-15" />
+                <path class="cat-paw-line" d="M190 611q-2 11 7 13m51-13q3 11-6 13" />
+                </g>
+
+                <g class="cat-two" transform="translate(-600 0)" aria-hidden="true">
+                <path class="cat-ground-shadow" d="M904 621q57-17 111 0-54 17-111 0Z" />
+                <path class="storybook-cat cat-cream" d="M927 608q-13-40 7-68l-1-34 29 24q26-8 48 6l31-23-5 39q24 39 0 64-28 29-71 18-26-7-38-26Z" />
+                <path class="cat-ear-inner" d="m940 522 14 14m70-10-15 15" />
+                <path class="cat-expression sleepy-face" d="M944 559q5 4 10 0m29 0q5 4 10 0m-29 15q7 5 14 0" />
+                <path class="cat-tail tail-two" d="M1029 599q37 5 29-29-4-15-19-12" />
+                <path class="cat-paw-line" d="M945 608q-2 10 7 12m52-12q2 10-6 12" />
+                </g>
+              </g>
+
+              <g class="world-flora" aria-hidden="true">
+                <path d="M108 650q5-54 10-79m-10 36-22-15m23 28 22-19M111 638q-19-18-28-17" />
+                <path d="M1090 642q-2-51-8-76m8 34 21-15m-22 29-21-20" />
+                <circle cx="110" cy="567" r="8" /><circle cx="1082" cy="558" r="8" />
+              </g>
+
+              <g class="discovery-indicator discovery-sun" data-discovery-for="sun" aria-hidden="true"><path d="M273 86l4 9 10 1-8 7 2 10-8-5-9 5 2-10-7-7 10-1Z" /></g>
+              <g class="discovery-indicator discovery-house" data-discovery-for="house" aria-hidden="true"><path d="M583 258l4 9 10 1-8 7 2 10-8-5-9 5 2-10-7-7 10-1Z" /></g>
+              <g class="discovery-indicator discovery-river" data-discovery-for="river" aria-hidden="true"><path d="M850 422l4 9 10 1-8 7 2 10-8-5-9 5 2-10-7-7 10-1Z" /></g>
+              <g class="discovery-indicator discovery-cats" data-discovery-for="cats" aria-hidden="true"><path d="M466 513l4 9 10 1-8 7 2 10-8-5-9 5 2-10-7-7 10-1Z" /></g>
+
+              <g class="world-reward" id="world-reward" aria-hidden="true">
+                <path d="M1015 105q28-37 58-7-32-9-45 23 28-14 55 1-48 24-68-17Z" />
+                <circle cx="1019" cy="128" r="3" /><circle cx="1084" cy="98" r="4" />
+              </g>
+        </svg>
+        <button class="world-continue-button" id="world-continue-button" type="button" hidden aria-label="Continue after exploring all four places">
+          <span aria-hidden="true">✦</span> continue <span aria-hidden="true">✦</span>
+        </button>
+      </main>
+
+      <main class="love-meter-page" id="love-meter-page" aria-labelledby="love-meter-title" aria-hidden="true" hidden>
+        <div class="love-page-wash" aria-hidden="true"></div>
+        <div class="love-background-doodles" aria-hidden="true">
+          <span class="love-doodle love-doodle-heart love-doodle-one">♡</span>
+          <span class="love-doodle love-doodle-heart love-doodle-two">♡</span>
+          <span class="love-doodle love-doodle-heart love-doodle-three">♡</span>
+          <span class="love-doodle love-doodle-star love-doodle-five">✧</span>
+          <span class="love-doodle love-doodle-star love-doodle-six">✧</span>
+          <span class="love-doodle love-doodle-envelope love-doodle-eight" aria-hidden="true"></span>
+          <span class="love-doodle love-doodle-flower love-doodle-nine">✿</span>
+          <span class="love-doodle love-doodle-dash love-doodle-ten">- - - - -</span>
+        </div>
+        <div class="love-page-inner">
+          <button class="love-return" id="love-return-to-world" type="button">← back to the little world</button>
+
+          <div class="love-reaction-card" id="love-reaction-card">
+            <div class="love-gif-frame">
+              <iframe
+                class="love-gif"
+                id="love-gif"
+                title="Love meter reaction"
+                loading="lazy"
+                allow="autoplay; fullscreen"
+                hidden
+              ></iframe>
+              <div class="love-gif-fallback" id="love-gif-fallback" hidden></div>
+            </div>
+            <div class="love-reaction-copy">
+              <p class="love-reaction-kicker" id="love-reaction-kicker">CURRENT FINDINGS</p>
+              <p class="love-message" id="love-message" aria-live="polite">u hate me dont you? :(</p>
+            </div>
+          </div>
+
+          <header class="love-header">
+            <p class="love-eyebrow">love-o-meter</p>
+            <h2 id="love-meter-title"><span id="love-meter-value" aria-live="polite">0%</span></h2>
+            <p class="love-subtitle">how much do you love me? ♡</p>
+            <p class="love-slow-note">go slow ;)</p>
+          </header>
+
+          <section class="love-meter-card" id="love-meter-card" aria-labelledby="love-meter-title">
+            <div class="love-gauge" id="love-gauge" aria-hidden="true">
+              <svg class="love-gauge-svg" viewBox="0 0 640 292" preserveAspectRatio="xMidYMid meet">
+                <defs>
+                  <linearGradient id="love-meter-rainbow" x1="0" y1="0" x2="1" y2="0">
+                    <stop offset="0" stop-color="#d9a5ba" />
+                    <stop offset=".22" stop-color="#db9ca8" />
+                    <stop offset=".46" stop-color="#efaa96" />
+                    <stop offset=".7" stop-color="#e4a6b9" />
+                    <stop offset="1" stop-color="#c99dbd" />
+                  </linearGradient>
+                </defs>
+                <path class="love-gauge-shadow" d="M92 236Q320-12 548 236" />
+                <path class="love-gauge-arc" d="M92 232Q320-16 548 232" />
+                <path class="love-gauge-segment love-gauge-segment-one" d="M92 232Q124 200 156 172" />
+                <path class="love-gauge-segment love-gauge-segment-two" d="M170 162Q201 142 233 126" />
+                <path class="love-gauge-segment love-gauge-segment-three" d="M247 121Q277 112 306 108" />
+                <path class="love-gauge-segment love-gauge-segment-four" d="M334 108Q364 112 393 121" />
+                <path class="love-gauge-segment love-gauge-segment-five" d="M407 126Q439 142 470 162" />
+                <path class="love-gauge-segment love-gauge-segment-six" d="M484 172Q516 200 548 232" />
+                <path class="love-gauge-arc-inner" d="M103 232Q320 8 537 232" />
+                <path class="love-gauge-ticks" d="M101 232h20m13-94 18 8m55-80 10 18m103-43v20m103 5-10 18m87 62-18 8m-45 98h-20" />
+                <g class="love-gauge-hearts">
+                  <text class="love-gauge-heart" data-gauge-heart="0" x="106" y="218">♡</text>
+                  <text class="love-gauge-heart" data-gauge-heart="1" x="132" y="142">♡</text>
+                  <text class="love-gauge-heart" data-gauge-heart="2" x="196" y="76">♡</text>
+                  <text class="love-gauge-heart" data-gauge-heart="3" x="308" y="43">♡</text>
+                  <text class="love-gauge-heart" data-gauge-heart="4" x="420" y="76">♡</text>
+                  <text class="love-gauge-heart" data-gauge-heart="5" x="484" y="142">♡</text>
+                  <text class="love-gauge-heart" data-gauge-heart="6" x="510" y="218">♡</text>
+                </g>
+                <g class="love-gauge-needle" id="love-gauge-needle">
+                  <path d="M320 232 320 67" />
+                  <circle cx="320" cy="232" r="18" />
+                  <circle class="love-gauge-needle-glint" cx="314" cy="226" r="4" />
+                </g>
+                <g class="love-gauge-cracks" aria-hidden="true">
+                  <path d="M212 157 225 145l-4-17 18-11" />
+                  <path d="M419 137 406 151l5 13-16 12" />
+                  <path d="M320 110v18l-10 12 11 14" />
+                </g>
+                <text class="love-gauge-label" x="320" y="205" text-anchor="middle">love</text>
+              </svg>
+              <p class="love-gauge-caption">a completely scientific measurement</p>
+            </div>
+
+            <div class="love-meter-stage" id="love-meter-stage">
+              <div class="love-meter-track-shell" id="love-meter-track-shell">
+                <div class="love-meter-track" id="love-meter-track" aria-hidden="true">
+                  <div class="love-meter-fill" id="love-meter-fill"></div>
+                  <div class="love-meter-marks"><span>0</span><span>25</span><span>50</span><span>75</span><span>100</span></div>
+                </div>
+                <button
+                  class="love-slider"
+                  id="love-slider"
+                  type="button"
+                  aria-label="Drag to measure your love"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  aria-valuenow="0"
+                  aria-valuetext="0 percent"
+                ><span aria-hidden="true">♥</span></button>
+              </div>
+
+              <div class="love-meter-cracks" id="love-meter-cracks" aria-hidden="true">
+                <span class="love-crack love-crack-one"></span>
+                <span class="love-crack love-crack-two"></span>
+                <span class="love-crack love-crack-three"></span>
+              </div>
+              <div class="love-meter-fragments" id="love-meter-fragments" aria-hidden="true">
+                <span>♡</span><span>✦</span><span>♥</span><span>✧</span><span>♡</span>
+              </div>
+            </div>
+
+            <p class="love-meter-instruction" id="love-meter-instruction">drag the heart honestly ♡</p>
+            <div class="love-meter-footer">
+              <p class="love-milestone" id="love-milestone" aria-live="polite">the evidence is currently devastating</p>
+              <button class="love-sound-toggle" id="love-sound-toggle" type="button" aria-pressed="false">sound on ♫</button>
+            </div>
+          </section>
+
+          <div class="love-ending-banner" id="love-ending-banner" hidden>
+            <span>SECRET ENDING UNLOCKED</span>
+            <span aria-hidden="true">♡ ✦ ♡</span>
+          </div>
+          <button class="love-reset-button" id="love-reset-button" type="button" hidden>try again ♡</button>
+        </div>
+      </main>
+
+      <div class="love-confirm-prompt" id="love-confirm-prompt" role="dialog" aria-modal="true" aria-labelledby="love-confirm-prompt-title" hidden>
+        <div class="love-confirm-dialog">
+          <p class="love-confirm-prompt-kicker">the meter has officially lost it</p>
+          <h2 id="love-confirm-prompt-title">one last thing...</h2>
+          <p class="love-confirm-prompt-copy">you broke the scale. now i need confirmation.</p>
+          <button class="love-confirm-button" id="love-confirm-button" type="button">confirmation, press me</button>
+        </div>
+      </div>
+
+      <main class="confirmation-page" id="confirmation-page" aria-labelledby="confirmation-title" aria-hidden="true" hidden>
+        <div class="confirmation-paper" id="confirmation-paper">
+          <p class="confirmation-kicker">one last question</p>
+          <h2 id="confirmation-title">do u really really really love me?</h2>
+
+          <div class="confirmation-actions" id="confirmation-actions">
+            <button class="confirmation-choice confirmation-green" id="confirmation-green" type="button">
+              <span class="confirmation-choice-icon" aria-hidden="true">&#x1F7E2;</span>
+              <span id="confirmation-green-label">yes i love you so much</span>
+            </button>
+            <button class="confirmation-choice confirmation-pink" id="confirmation-pink" type="button">
+              <span class="confirmation-choice-icon" aria-hidden="true">&#x1FA77;</span>
+              <span>no i hate u</span>
+            </button>
+            <span class="confirmation-heart-pop" id="confirmation-heart-pop" aria-hidden="true">&#x2661;</span>
+          </div>
+
+          <p class="confirmation-status" id="confirmation-status" aria-live="polite"></p>
+          <button class="confirmation-continue-button" id="confirmation-continue-button" type="button" hidden>keep going</button>
+        </div>
+      </main>
+
+      <main class="romance-journey" id="romance-journey" aria-labelledby="romance-stage-title" aria-hidden="true" hidden>
+        <div class="romance-progress" aria-label="Romantic journey progress">
+          <span class="romance-progress-label">our little story</span>
+          <span class="romance-progress-dots" id="romance-progress-dots"></span>
+        </div>
+
+        <section class="romance-stage romance-stage-welcome is-active" data-romance-stage="0" aria-labelledby="romance-stage-title">
+          <div class="romance-hearts romance-hearts-welcome" aria-hidden="true"><span>&hearts;</span><span>&hearts;</span><span>&hearts;</span><span>&hearts;</span></div>
+          <div class="hug-illustration" aria-hidden="true">
+            <div class="hug-sun"></div><div class="hug-ground"></div>
+            <div class="hug-person hug-person-me"><i></i><b></b><em></em></div>
+            <div class="hug-person hug-person-you"><i></i><b></b><em></em></div>
+            <span class="hug-heart">&hearts;</span>
+          </div>
+          <p class="romance-eyebrow">a little something from my heart</p>
+          <h1 class="romance-title" id="romance-stage-title">Until We <span>Get Married</span></h1>
+          <p class="romance-script">A little something I made just for you... because I miss you.</p>
+          <button class="romance-button" type="button" data-romance-next>Let's Begin <span>&hearts;</span></button>
+        </section>
+
+        <section class="romance-stage romance-stage-distance" data-romance-stage="1" aria-labelledby="romance-distance-title" hidden>
+          <p class="romance-eyebrow">the map between us</p>
+          <h2 class="romance-heading" id="romance-distance-title"><span id="romance-distance-value">1 mile</span> between us</h2>
+          <div class="distance-map" aria-label="A map showing our distance">
+            <span class="map-grid"></span>
+            <svg class="distance-route" viewBox="0 0 500 240" aria-hidden="true"><path d="M92 165 C175 48 310 24 416 68" pathLength="1"></path></svg>
+            <div class="map-pin map-pin-me"><span class="pin-dot"></span><strong>Me</strong></div>
+            <div class="map-pin map-pin-you"><span class="pin-dot"></span><strong>You</strong></div>
+            <span class="map-label map-label-one">same sky</span><span class="map-label map-label-two">different streets</span>
+          </div>
+          <p class="romance-script">...but never between our hearts.</p>
+          <button class="romance-button" type="button" data-romance-next>Keep Going <span>&rarr;</span></button>
+        </section>
+
+        <section class="romance-stage romance-stage-days" data-romance-stage="2" aria-labelledby="romance-days-title" hidden>
+          <p class="romance-eyebrow">the last time I saw you</p>
+          <h2 class="romance-heading" id="romance-days-title"> WE LAST SAW EACH OTHER ON</h2>
+          <p class="romance-date" id="romance-last-date">October 22, 2026</p>
+          <div class="days-card"><strong id="romance-days-count">0</strong><span>Days Ago</span><i>&hearts;</i></div>
+          <p class="romance-body">And I've missed you since</p>
+          <button class="romance-button" type="button" data-romance-next>Keep Going <span>&rarr;</span></button>
+        </section>
+
+        <section class="romance-stage romance-stage-plans" data-romance-stage="3" aria-labelledby="romance-plans-title" hidden>
+          <p class="romance-eyebrow">a very serious list</p>
+          <h2 class="romance-heading" id="romance-plans-title">Things we'll do</h2>
+          <p class="romance-script">when we finally get married</p>
+          <div class="bucket-list" id="bucket-list"></div>
+          <button class="romance-button" type="button" data-romance-next>See Our Memories <span>&hearts;</span></button>
+        </section>
+
+        <section class="romance-stage romance-stage-memories" data-romance-stage="4" aria-labelledby="romance-memories-title" hidden>
+          <p class="romance-eyebrow">smol archive </p>
+          <h2 class="romance-heading" id="romance-memories-title">photo dump, enjoy :p</h2>
+          <p class="romance-script">oo I love these</p>
+          <button class="polaroid" id="romance-polaroid" type="button" aria-label="Show the next memory">
+            <span class="polaroid-tape"></span><span class="polaroid-heart">&hearts;</span>
+            <img id="romance-memory-image" src="assets/house-photo.png" alt="A memory waiting to be remembered" />
+            <span class="polaroid-caption" id="romance-memory-caption">HEHEHE</span>
+          </button>
+          <p class="memory-hint">tap the photo for another photo</p>
+          <button class="romance-button" type="button" data-romance-next>A Letter For You <span>&hearts;</span></button>
+        </section>
+
+        <section class="romance-stage romance-stage-letter" data-romance-stage="5" aria-labelledby="romance-letter-heading" hidden>
+          <p class="romance-eyebrow">A MESSAGE FOR YOU</p>
+          <h2 class="romance-heading" id="romance-letter-heading">From My Heart</h2>
+          <button class="envelope" id="romance-envelope" type="button" aria-expanded="false" aria-label="Open the letter">
+            <span class="envelope-back"></span><span class="envelope-flap"></span><span class="envelope-front"></span><span class="envelope-heart">&hearts;</span><span class="envelope-label">TAP TO OPEN</span>
+          </button>
+          <article class="love-letter" id="romance-letter" hidden>
+            <span class="letter-tape"></span><span class="letter-heart">&hearts;</span>
+            <p class="letter-kicker">for my favorite person</p>
+            <h3 id="romance-letter-title">Hi my love</h3>
+            <div id="romance-letter-copy"></div>
+            <p class="letter-signoff">Forever Yours,<br />Me :) </p>
+          </article>
+          <button class="romance-button romance-letter-next" type="button" data-romance-next hidden>One Last Thing <span>&hearts;</span></button>
+        </section>
+
+        <section class="romance-stage romance-stage-final" data-romance-stage="6" aria-labelledby="romance-final-title" hidden>
+          <div class="final-hearts" aria-hidden="true"><span>&hearts;</span><span>&hearts;</span><span>&hearts;</span><span>&hearts;</span><span>&hearts;</span></div>
+          <svg class="final-heart" viewBox="0 0 240 220" aria-hidden="true"><path d="M120 201S24 145 24 78C24 19 96 8 120 59 144 8 216 19 216 78c0 67-96 123-96 123Z" pathLength="1"></path></svg>
+          <h2 class="romance-final-title" id="romance-final-title">I Love You.</h2>
+          <p class="romance-final-script">I can't wait to get married to you.</p>
+          <div class="final-badge">&hearts;</div>
+          <div class="final-actions"><button class="spotify-button" id="open-music-button" type="button"><span class="spotify-mark" aria-hidden="true"></span>Open our playlist</button></div>
+        </section>
+      </main>
+
+      <main class="music-page" id="music-page" aria-labelledby="music-page-title" aria-hidden="true" hidden>
+        <div class="music-page-topbar"><span class="music-brand"><span class="spotify-mark" aria-hidden="true"></span>Spotify</span><span class="music-status">Moosic</span></div>
+        <div class="music-page-content">
+          <p class="music-kicker">some iconic songs for us</p>
+          <h2 id="music-page-title">OUR FAVORITE SONGS</h2>
+          <p class="music-intro">some tracks that u like</p>
+          <section class="music-empty-state" aria-label="Playlist overview">
+            <div class="music-record" aria-hidden="true"><span></span></div>
+            <div><p class="music-empty-label">30 TRACKS</p><h3>Our soundtrack.</h3><p>stare at the center of the disk and the it looks like the rings a shaking.</p></div>
+          </section>
+          <div class="music-track-list" id="music-track-list" aria-label="Our Spotify soundtrack"></div>
+          <section class="music-ranking" aria-labelledby="music-ranking-title">
+            <div class="music-ranking-heading">
+              <p class="music-kicker">your turn</p>
+              <h3 id="music-ranking-title">Pick your top 3</h3>
+              <p>Enter the number of your favourite songs from 1–30, then reveal your ranking.</p>
+            </div>
+            <form class="music-ranking-form" id="music-ranking-form" novalidate>
+              <label class="music-ranking-field" for="music-rank-1"><span>1st place</span><input id="music-rank-1" name="first" type="number" min="1" max="30" inputmode="numeric" placeholder="1–30" required></label>
+              <label class="music-ranking-field" for="music-rank-2"><span>2nd place</span><input id="music-rank-2" name="second" type="number" min="1" max="30" inputmode="numeric" placeholder="1–30" required></label>
+              <label class="music-ranking-field" for="music-rank-3"><span>3rd place</span><input id="music-rank-3" name="third" type="number" min="1" max="30" inputmode="numeric" placeholder="1–30" required></label>
+              <button class="music-ranking-submit" type="submit">Reveal my ranking</button>
+            </form>
+            <p class="music-ranking-message" id="music-ranking-message" role="status" aria-live="polite"></p>
+            <div class="music-ranking-results" id="music-ranking-results" aria-live="polite">
+              <p class="music-ranking-placeholder">Your three picks will appear here.</p>
+            </div>
+          </section>
+          <div class="music-page-actions">
+            <button class="music-next-button" id="music-next-button" type="button"><span class="music-book-icon" aria-hidden="true">▤</span> next chapter</button>
+            <button class="music-back-button" id="music-back-button" type="button">&larr; back to the last page</button>
+          </div>
+        </div>
+      </main>
+
+      <main class="study-page" id="study-page" aria-labelledby="study-page-title" aria-hidden="true" hidden>
+        <div class="study-site-shell">
+          <header class="study-topbar">
+            <a class="study-brand" href="#study" aria-label="Our little academy home"><span class="study-brand-mark" aria-hidden="true">✦</span> R academy</a>
+            <nav class="study-nav" aria-label="Academy navigation"><span>COURSES</span><span>NOTES</span><span>ABOUT</span></nav>
+            <span class="study-status">ONLINE • TERM 01</span>
+          </header>
+          <div class="study-layout">
+            <aside class="study-sidebar" aria-label="Course details">
+              <p class="study-sidebar-label">CURRENT COURSE</p>
+              <h2>US 101</h2>
+              <div class="study-progress"><span style="width: 42%"></span></div>
+              <p class="study-progress-copy">chapter 01 of forever</p>
+              <ul class="study-syllabus">
+                <li class="is-current"><span>01</span> the beginning</li>
+                <li><span>02</span> the end hehe</li>
+              </ul>
+            </aside>
+            <section class="study-main-content">
+              <p class="study-eyebrow">A VERY IMPORTANT ELECTIVE</p>
+              <h1 id="study-page-title">The curriculum<br><em>of us.</em></h1>
+              <p class="study-intro">Welcome to the next chapter. This little classroom is saved for the things we are still learning, making, and becoming together.</p>
+              <article class="study-lesson-card">
+                <div class="study-lesson-topline"><span>LESSON 01</span><span>READING TIME: ∞</span></div>
+                <h2>Your next lesson is waiting.</h2>
+                <p class="study-placeholder-copy">You will be given a quiz... about us... You better do good!</p>
+                <div class="study-lesson-footer"><span class="study-open-dot"></span><span>COURSE STATUS: IN PROGRESS</span></div>
+                <button class="study-quiz-button" id="study-start-quiz-button" type="button">take the quiz <span aria-hidden="true">&rarr;</span></button>
+              </article>
+              <button class="study-back-button" id="study-back-button" type="button">&larr; back to our soundtrack</button>
+            </section>
+          </div>
+        </div>
+      </main>
+
+      <main class="quiz-page" id="quiz-page" aria-labelledby="quiz-page-title" aria-hidden="true" hidden>
+        <div class="quiz-shell">
+          <header class="quiz-topbar">
+            <button class="quiz-back-button" id="quiz-back-button" type="button">&larr; academy</button>
+            <span class="quiz-topbar-label">US 101 • KNOWLEDGE CHECK</span>
+          </header>
+
+          <section class="quiz-intro-screen" id="quiz-intro-screen" aria-labelledby="quiz-page-title">
+            <p class="quiz-eyebrow">A VERY IMPORTANT EXAM</p>
+            <h1 id="quiz-page-title">HOW WELL DO<br><em>YOU KNOW US?</em></h1>
+            <p class="quiz-intro-copy">30 questions. 3 minutes. Let&rsquo;s see how well you&rsquo;ve been paying attention.</p>
+            <div class="quiz-intro-meta"><span>30 QUESTIONS</span><span>180 SECONDS</span><span>1 POINT EACH</span></div>
+            <button class="quiz-start-button" id="quiz-start-button" type="button">START QUIZ <span aria-hidden="true">&rarr;</span></button>
+          </section>
+
+          <section class="quiz-game" id="quiz-game" aria-live="polite" hidden>
+            <div class="quiz-game-header">
+              <div><p class="quiz-eyebrow">KNOWLEDGE CHECK</p><p class="quiz-progress" id="quiz-progress">QUESTION 1 / 30</p></div>
+              <div class="quiz-timer" id="quiz-timer" aria-label="Time remaining">03:00</div>
+            </div>
+            <div class="quiz-progress-track" aria-hidden="true"><span id="quiz-progress-bar"></span></div>
+            <article class="quiz-question-card" id="quiz-question-card">
+              <p class="quiz-question-number" id="quiz-question-number">01</p>
+              <h2 id="quiz-question-text"></h2>
+              <p class="quiz-question-detail" id="quiz-question-detail"></p>
+              <div class="quiz-options" id="quiz-options"></div>
+            </article>
+          </section>
+
+          <section class="quiz-results" id="quiz-results" aria-labelledby="quiz-results-title" hidden>
+            <p class="quiz-eyebrow">EXAM COMPLETE</p>
+            <h2 id="quiz-results-title">Your results are in.</h2>
+            <div class="quiz-score-card">
+              <p class="quiz-score-label">FINAL SCORE</p>
+              <p class="quiz-score" id="quiz-score">0 / 30</p>
+              <p class="quiz-score-message" id="quiz-score-message"></p>
+              <div class="quiz-result-stats"><span><strong id="quiz-percentage">0%</strong> percentage</span><span><strong id="quiz-correct">0</strong> correct</span><span><strong id="quiz-incorrect">0</strong> incorrect</span><span><strong id="quiz-time-taken">00:00</strong> time taken</span></div>
+            </div>
+            <div class="quiz-review" id="quiz-review"></div>
+            <button class="quiz-restart-button" id="quiz-restart-button" type="button">take it again</button>
+            <button class="quiz-universe-button" id="quiz-universe-button" type="button" hidden>enter her little universe <span aria-hidden="true">&rarr;</span></button>
+          </section>
+        </div>
+      </main>
+
+      <main class="universe-page" id="universe-page" aria-labelledby="universe-page-title" aria-hidden="true" hidden>
+        <div class="universe-shell">
+          <header class="universe-topbar">
+            <span class="universe-discovery-count" id="universe-discovery-count">0 / 17 collected</span>
+            <span class="universe-topbar-label">A universe where everything's to your liking</span>
+            <button class="universe-back-button" id="universe-back-button" type="button">&larr; quiz results</button>
+          </header>
+          <section class="universe-heading">
+            <p class="universe-eyebrow">ZARU-VERSE</p>
+            <h1 id="universe-page-title">A universe where everything<br><em>is to your liking.</em></h1>
+            <p>Everything here is a small detail where you like everything. I mean yeah I asked you yesterday but wtv</p>
+          </section>
+          <section class="universe-stage" id="universe-stage" aria-label="Scrollable restricted orbit of favourite things">
+            <div class="universe-planet universe-planet-amber" aria-hidden="true"></div>
+            <div class="universe-planet universe-planet-violet" aria-hidden="true"></div>
+            <div class="universe-asteroid universe-asteroid-one" aria-hidden="true"></div>
+            <div class="universe-asteroid universe-asteroid-two" aria-hidden="true"></div>
+            <div class="universe-starscape" aria-hidden="true"></div>
+            <div class="universe-restricted-zone" aria-hidden="true"><span>RESTRICTED COLLECTION AREA</span><small>all objects are in orbit</small></div>
+
+            <div class="universe-journey-track">
+              <div class="universe-journey-item universe-item-left">
+                <button class="universe-exhibit exhibit-pasta" data-exhibit-id="pasta" type="button" aria-label="Open Alfredo pasta exhibit"><span class="universe-object object-pasta" aria-hidden="true"></span><span class="universe-exhibit-label">alfredo</span></button>
+                <div class="universe-exhibit-note" aria-label="Note beside Alfredo pasta">your fav food</div>
+              </div>
+              <div class="universe-journey-item universe-item-right">
+                <button class="universe-exhibit exhibit-icecream" data-exhibit-id="icecream" type="button" aria-label="Open ice cream exhibit"><span class="universe-object object-icecream" aria-hidden="true"></span><span class="universe-exhibit-label">ice cream</span></button>
+                <div class="universe-exhibit-note" aria-label="Note beside ice cream">your fav dessert</div>
+              </div>
+              <div class="universe-journey-item universe-item-left">
+                <button class="universe-exhibit exhibit-noodles is-concealed" data-exhibit-id="noodles" type="button" aria-label="Open noodles exhibit"><span class="universe-object object-noodles" aria-hidden="true">?</span><span class="universe-exhibit-label">noodles</span></button>
+                <div class="universe-exhibit-note" aria-label="Note beside possible noodles">your fav snack</div>
+              </div>
+              <div class="universe-journey-item universe-item-right">
+                <button class="universe-exhibit exhibit-restaurant" data-exhibit-id="restaurant" type="button" aria-label="Open La Taska exhibit"><span class="universe-object object-restaurant" aria-hidden="true"></span><span class="universe-exhibit-label">la taska</span></button>
+                <div class="universe-exhibit-note" aria-label="Note beside La Taska">your fav restaurant</div>
+              </div>
+              <div class="universe-journey-item universe-item-left">
+                <button class="universe-exhibit exhibit-chocolate" data-exhibit-id="chocolate" type="button" aria-label="Open chocolate exhibit"><span class="universe-object object-chocolate" aria-hidden="true"></span><span class="universe-exhibit-label">comfort snack</span></button>
+                <div class="universe-exhibit-note" aria-label="Note beside chocolate and random snacks">your fav thing to eat on your periods</div>
+              </div>
+              <div class="universe-journey-item universe-item-right">
+                <button class="universe-exhibit exhibit-minecraft" data-exhibit-id="minecraft" type="button" aria-label="Open Minecraft exhibit"><span class="universe-object object-minecraft" aria-hidden="true"></span><span class="universe-exhibit-label">minecraft</span></button>
+                <div class="universe-exhibit-note" aria-label="Note beside Minecraft">your fav videogame</div>
+              </div>
+              <div class="universe-journey-item universe-item-left">
+                <button class="universe-exhibit exhibit-show" data-exhibit-id="show" type="button" aria-label="Open Twinkling Watermelon exhibit"><span class="universe-object object-show" aria-hidden="true"></span><span class="universe-exhibit-label">twinkling watermelon</span></button>
+                <div class="universe-exhibit-note" aria-label="Note beside Twinkling Watermelon">your fav TV show</div>
+              </div>
+              <div class="universe-journey-item universe-item-right">
+                <button class="universe-exhibit exhibit-movie is-concealed" data-exhibit-id="movie" type="button" aria-label="Open Big Hero 6 exhibit"><span class="universe-object object-movie" aria-hidden="true">?</span><span class="universe-exhibit-label">Big Hero 6</span></button>
+                <div class="universe-exhibit-note" aria-label="Note beside Big Hero 6">your fav movie</div>
+              </div>
+              <div class="universe-journey-item universe-item-left">
+                <button class="universe-exhibit exhibit-music" data-exhibit-id="music" type="button" aria-label="Open love and pop songs exhibit"><span class="universe-object object-music" aria-hidden="true">♪</span><span class="universe-exhibit-label">love/pop songs</span></button>
+                <div class="universe-exhibit-note" aria-label="Note beside pop and love songs">your fav genre of music</div>
+              </div>
+              <div class="universe-journey-item universe-item-right">
+                <button class="universe-exhibit exhibit-night" data-exhibit-id="night" type="button" aria-label="Open night exhibit"><span class="universe-object object-night" aria-hidden="true"></span><span class="universe-exhibit-label">night</span></button>
+                <div class="universe-exhibit-note" aria-label="Note beside night time">your fav time of day</div>
+              </div>
+              <div class="universe-journey-item universe-item-left">
+                <button class="universe-exhibit exhibit-silk" data-exhibit-id="silk" type="button" aria-label="Open silk exhibit"><span class="universe-object object-silk" aria-hidden="true"></span><span class="universe-exhibit-label">silk</span></button>
+                <div class="universe-exhibit-note" aria-label="Note beside silk">your fav texture of clothes</div>
+              </div>
+              <div class="universe-journey-item universe-item-right">
+                <button class="universe-exhibit exhibit-scent is-concealed" data-exhibit-id="scent" type="button" aria-label="Open floral and sweet scent exhibit"><span class="universe-object object-scent" aria-hidden="true">?</span><span class="universe-exhibit-label">floral &amp; sweet</span></button>
+                <div class="universe-exhibit-note" aria-label="Note beside floral and sweet scent">your fav type of scent</div>
+              </div>
+              <div class="universe-journey-item universe-item-left">
+                <button class="universe-exhibit exhibit-murree" data-exhibit-id="murree" type="button" aria-label="Open Murree exhibit"><span class="universe-object object-murree" aria-hidden="true"></span><span class="universe-exhibit-label">murree</span></button>
+                <div class="universe-exhibit-note" aria-label="Note beside Murree">your fav place you ever visited</div>
+              </div>
+              <div class="universe-journey-item universe-item-right">
+                <button class="universe-exhibit exhibit-islamabad" data-exhibit-id="islamabad" type="button" aria-label="Open Islamabad exhibit"><span class="universe-object object-islamabad" aria-hidden="true"></span><span class="universe-exhibit-label">islamabad</span></button>
+                <div class="universe-exhibit-note" aria-label="Note beside Islamabad">your fav big city you ever visited</div>
+              </div>
+
+              <div class="universe-memory-corner">
+                <div class="universe-memory-title"><span>MEMORY CONSTELLATION</span><small>three stars from your story</small></div>
+                <div class="universe-journey-item universe-item-left"><button class="universe-memory-star" data-exhibit-id="memory-code" type="button" aria-label="Open code language memory"><span>01</span></button><div class="universe-exhibit-note" aria-label="Note beside the code language memory">okay yeah that night would've been insane</div></div>
+                <div class="universe-journey-item universe-item-right"><button class="universe-memory-star" data-exhibit-id="memory-balcony" type="button" aria-label="Open balcony memory"><span>02</span></button><div class="universe-exhibit-note" aria-label="Note beside the balcony memory">we felt like we were in a movie.. main character meeting his queen hehehehe</div></div>
+                <div class="universe-journey-item universe-item-left"><button class="universe-memory-star" data-exhibit-id="memory-marks" type="button" aria-label="Open 530 marks memory"><span>03</span></button><div class="universe-exhibit-note" aria-label="Note beside the 530 marks memory">I was so happy for you</div></div>
+              </div>
+            </div>
+
+            <aside class="universe-reveal" id="universe-reveal" aria-live="polite" hidden>
+              <button class="universe-reveal-close" id="universe-reveal-close" type="button" aria-label="Close exhibit">&times;</button>
+              <p class="universe-reveal-category" id="universe-reveal-category"></p>
+              <div class="universe-reveal-art" id="universe-reveal-art" aria-hidden="true"></div>
+              <h2 id="universe-reveal-title"></h2>
+              <p id="universe-reveal-description"></p>
+            </aside>
+          </section>
+          <section class="universe-final-discovery" id="universe-final-discovery" hidden>
+            <p class="universe-eyebrow">ALL EXHIBITS FOUND</p>
+            <p>Well, that&rsquo;s a little collection of things that make you, <em>you.</em></p>
+            <button id="universe-final-button" type="button">open the final discovery <span aria-hidden="true">&rarr;</span></button>
+            <div class="universe-final-message" id="universe-final-message" hidden>Out of all the beautiful things in this little universe, you&rsquo;re still my favourite.</div>
+            <button class="universe-cake-button" id="universe-cake-button" type="button" hidden>continue to the birthday cake <span aria-hidden="true">&rarr;</span></button>
+          </section>
+        </div>
+      </main>
+
+      <main class="cake-page" id="cake-page" aria-labelledby="cake-page-title" aria-hidden="true" hidden>
+        <div class="cake-confetti" id="cake-confetti" aria-hidden="true"></div>
+        <div class="cake-sprinkle cake-sprinkle-one" aria-hidden="true">✦</div>
+        <div class="cake-sprinkle cake-sprinkle-two" aria-hidden="true">♡</div>
+        <div class="cake-sprinkle cake-sprinkle-three" aria-hidden="true">✧</div>
+        <section class="cake-content">
+          <p class="cake-kicker">THE LAST LITTLE CELEBRATION</p>
+          <h1 id="cake-page-title">make a wish,<br><em>birthday girl.</em></h1>
+          <p class="cake-intro">One final stop before the letter. Blow out the candles when you&rsquo;re ready.</p>
+
+          <div class="cake-scene" aria-label="A birthday cake with lit candles">
+            <div class="cake-glow" aria-hidden="true"></div>
+            <div class="cake-cake">
+              <div class="cake-candle cake-candle-one"><span class="cake-flame"></span></div>
+              <div class="cake-candle cake-candle-two"><span class="cake-flame"></span></div>
+              <div class="cake-candle cake-candle-three"><span class="cake-flame"></span></div>
+              <div class="cake-candle cake-candle-four"><span class="cake-flame"></span></div>
+              <div class="cake-candle cake-candle-five"><span class="cake-flame"></span></div>
+              <div class="cake-icing cake-icing-top"></div>
+              <div class="cake-layer cake-layer-top"></div>
+              <div class="cake-icing cake-icing-middle"></div>
+              <div class="cake-layer cake-layer-middle"></div>
+              <div class="cake-icing cake-icing-bottom"></div>
+              <div class="cake-layer cake-layer-bottom"></div>
+              <div class="cake-plate"></div>
+            </div>
+            <div class="cake-smoke cake-smoke-one" aria-hidden="true"></div>
+            <div class="cake-smoke cake-smoke-two" aria-hidden="true"></div>
+            <div class="cake-smoke cake-smoke-three" aria-hidden="true"></div>
+          </div>
+
+          <button class="blow-candles-button" id="blow-candles-button" type="button">blow the candles <span aria-hidden="true">&rarr;</span></button>
+          <p class="cake-status" id="cake-status" aria-live="polite">make your wish first...</p>
+        </section>
+
+        <aside class="cake-letter-popup" id="cake-letter-popup" aria-live="polite" hidden>
+          <p>this is the last page of this site</p>
+          <button id="cake-letter-button" type="button">click it, I wrote you a letter &lt;3</button>
+        </aside>
+      </main>
+
+      <main class="letter-page" id="letter-page" aria-labelledby="letter-page-title" aria-hidden="true" hidden>
+        <div class="letter-page-stars" aria-hidden="true"></div>
+        <section class="letter-shell">
+          <header class="letter-header">
+            <p class="letter-kicker">ONE LAST THING</p>
+            <h1 id="letter-page-title">a letter<br><em>for you.</em></h1>
+            <p class="letter-from">from me, with all my love</p>
+          </header>
+
+          <article class="letter-paper">
+            <div class="letter-paper-top" aria-hidden="true">♡</div>
+            <div class="letter-copy">
+              <p>Hi Fatima. This is the final window of this website I made for you. I&rsquo;ll be honest if I started even a month earlier this would&rsquo;ve been 10x better but I procrastinate alot. My first idea was to make you a roblox game. I learnt a little bit of modelling and even learnt luau (the language that&rsquo;s used to script the games on roblox) but I couldn&rsquo;t learn it that easily. Then I thought of vibecoding, yk like using ai, but that didn&rsquo;t work out too cus the usage limit on the free models is very small and even using multiple agents and google accounts didn&rsquo;t help. So I settled on this. I hope you like it. I didn&rsquo;t program it fully. I used AI to make the stuff but what I did do was create the designs, the prompts, the ideas, the texts, like the spotify one and others I wrote them myself I didn&rsquo;t use ai. I&rsquo;m saying so u dont think I didn&rsquo;t put in any effort. I think this project took me a combined 30-40 hours but I really loved it and had fun making it. You should go through it multiple times I&rsquo;ve hidden a lot of stuff that you can&rsquo;t see in your first go through (but it&rsquo;s not so much just a few minor things here and there). Okay enough with the birthday. Let&rsquo;s talk about you</p>
+
+              <p>My love, it&rsquo;s your 17th birthday (or 16th wtv u prefer). It&rsquo;s a big day, you should be happy, have fun, I mean ur ovulating so ur gonna be in a good mood duhh. I hope life brings you endless joys, I hope the world is never harsh on you, I hope you get all the things you deserve and dream of. I hope all your dreams come true, and I hope we get married to each other soon. I pray for you everyday, for your career, for your success, for your health, for your family, your brother, and just know that I love you so much. I&rsquo;m sorry for all the times I&rsquo;ve hurt you or made you sad or broke your heart. Know that I adore you, I love you with all the atoms in my body. I love you so much. You are the best thing that&rsquo;s ever happened to me and when we get married it&rsquo;ll be the best that COULD EVER happen to me. I hope we build a happy life together, do the things we dreamt of, have kids, go travel the world, have a house, live life to the fullest while enjoying each other&rsquo;s company. I hope the love we have for each other increases, exponentially, all the time, I hope we never lose feelings for each other. We can gain them again if that happens but ik it won&rsquo;t.</p>
+
+              <p>I really want you to succeed in life, to become the doctor you dream to be, to live the life you wish to live. I&rsquo;ll be there for you, supporting you, loving you, cheering you on every step of the way. At the end of the day, if you feel overwhelmed or sad, you can always come to me. I love you and I promise to love you till I&rsquo;m dead. I hope we&rsquo;re together in heavem. I hope we both end up in heaven.</p>
+
+              <p>Know that I appreciate you, I&rsquo;m grateful for all that you do for me, how you treat me when I feel sad, how you cheer me up, how a single beep on my computer even when I&rsquo;m stressed brings a genuine smile to my face because you text me. I can&rsquo;t imagine a life without you now. You know me so well, I know you so well. The memories we made together, the nice things we said to each other, the times we saw each other irl will always be the favourite moments in my life. I love you so much Fatima. Words can&rsquo;t describe how much I actually love you. My baby, my whole world, my wife, meri jaan, jaanumaanu kuchupochu, mi amore, mia singora and other nicknames I call you I can&rsquo;t recall rn sawwy. I love you so much and I wish you the best in your life. Lastly, happy birthday meri pyari si Fatima. have a great day, party hard! ;)</p>
+            </div>
+            <p class="letter-signoff">always yours ♡</p>
+          </article>
+        </section>
+      </main>
+
+      <main class="destination-screen" id="destination-screen" aria-labelledby="destination-title" aria-hidden="true" hidden>
+        <section class="placeholder-card">
+          <p class="placeholder-kicker">DESTINATION PLACEHOLDER</p>
+          <p class="placeholder-object" id="destination-object-label">OBJECT</p>
+          <h2 id="destination-title">A page for later</h2>
+          <p class="placeholder-copy">Nothing has been added here yet.</p>
+          <button class="return-button" id="return-to-world" type="button">← return to the little world</button>
+        </section>
+
+        <section class="river-page" id="river-page" aria-labelledby="river-page-title" hidden>
+          <div class="river-page-wash" aria-hidden="true"></div>
+          <div class="river-page-inner">
+            <button class="river-return" id="river-return-to-world" type="button">back home ♡</button>
+
+            <header class="river-header">
+              <p class="river-eyebrow">a quiet little river</p>
+              <h2 id="river-page-title">paper boats carry little messages</h2>
+              <p class="river-intro">tap a boat when it drifts close enough</p>
+            </header>
+
+            <div class="river-scene-shell" id="river-scene-shell">
+              <svg class="river-scene" viewBox="0 0 1200 760" preserveAspectRatio="none" role="img" aria-labelledby="river-scene-title river-scene-desc">
+                <title id="river-scene-title">A peaceful winding river with paper boats</title>
+                <desc id="river-scene-desc">Six pastel paper boats float down a continuous river. Tap one to read its message.</desc>
+                <defs>
+                  <linearGradient id="paper-river-sky" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0" stop-color="#d8eee9" />
+                    <stop offset="1" stop-color="#eef0d7" />
+                  </linearGradient>
+                  <linearGradient id="paper-river-grass" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0" stop-color="#b9d5ac" />
+                    <stop offset="1" stop-color="#94be8d" />
+                  </linearGradient>
+                  <linearGradient id="paper-river-water" x1="0" y1="0" x2="1" y2="0">
+                    <stop offset="0" stop-color="#9bd5d1" />
+                    <stop offset=".5" stop-color="#81c5c6" />
+                    <stop offset="1" stop-color="#72b4b9" />
+                  </linearGradient>
+                  <pattern id="paper-river-grain" width="34" height="34" patternUnits="userSpaceOnUse">
+                    <circle cx="6" cy="8" r=".9" fill="#6d8772" opacity=".1" />
+                    <circle cx="25" cy="26" r=".7" fill="#6d8772" opacity=".09" />
+                    <path d="M3 29 11 27M26 5l5-1" stroke="#6d8772" stroke-width=".7" opacity=".07" />
+                  </pattern>
+                  <!-- This is the one continuous water shape. The boats use the separate centerline below. -->
+                  <path id="river-water-shape" d="M578 300C552 330 570 365 650 414C732 464 770 514 720 580C675 638 548 652 540 716C530 748 550 760 560 760H1000C1000 717 970 681 895 644C770 582 708 546 715 500C723 451 838 421 875 350C916 315 855 300 740 300C678 300 690 300 662 300C648 278 631 274 620 293C608 274 592 278 578 300Z" />
+                  <clipPath id="river-water-clip">
+                    <use href="#river-water-shape" />
+                  </clipPath>
+                </defs>
+
+                <rect class="paper-river-sky" width="1200" height="760" />
+                <path class="river-cloud river-cloud-one" d="M82 162q10-34 43-24 18-34 51-5 35-13 45 22h21v12H64v-12Z" />
+                <path class="river-cloud river-cloud-two" d="M914 198q8-27 35-21 14-26 42-3 31-13 40 20h20v10H904v-6Z" />
+                <path class="river-back-hill" d="M0 316q150-108 306-25 124 67 252 0 144-77 284 11 142 89 358-3v461H0Z" />
+                <path class="river-ground" d="M0 448q140-67 280-6 130 56 258-8 166-84 315 11 140 89 347 8v307H0Z" />
+                <path class="river-ground-paper" d="M0 448q140-67 280-6 130 56 258-8 166-84 315 11 140 89 347 8v307H0Z" />
+
+                <use href="#river-water-shape" class="river-bank-rim" />
+                <use href="#river-water-shape" class="river-water-fill" />
+                <g class="river-water-details" clip-path="url(#river-water-clip)" aria-hidden="true">
+                  <path d="M563 76q53-17 107 3M583 159q69-19 130 6M657 258q-35 16-71 5M696 333q39-17 79-2M608 416q62-21 122 0M565 506q-2 18 63 27M630 586q86-12 154 28M754 679q65-15 107 13" />
+                  <path d="M580 110q28-8 56-1M738 291q21-7 44-1M548 543q27-8 49-2M802 710q26-6 48 2" class="river-water-glint" />
+                </g>
+
+                <g class="river-bank-details" aria-hidden="true">
+                  <path class="river-grass-tuft" d="M124 548q-4-37-12-54m12 30 19-17m-18 32-20-13M1030 505q7-31 14-51m-12 33-18-17m16 32 21-13M273 330q-2-29-12-45m12 27 16-15m-17 28-17-12M1088 350q-2-28-10-44m10 27 17-15m-18 27-16-11" />
+                  <g class="river-bush river-bush-one"><path d="M102 548q-10-45 28-48 6-36 42-18 22-31 49 2 38-4 37 39-13 31-61 30Z" /><path d="M109 546q40-35 125-12" /></g>
+                  <g class="river-bush river-bush-two"><path d="M978 552q-10-38 27-45 10-33 41-14 24-27 49 3 30-3 30 34-10 29-57 28Z" /><path d="M985 549q37-30 113-13" /></g>
+                  <g class="river-stones"><ellipse cx="398" cy="590" rx="34" ry="16" /><ellipse cx="444" cy="616" rx="23" ry="12" /><ellipse cx="1001" cy="650" rx="35" ry="15" /><ellipse cx="1050" cy="670" rx="21" ry="11" /></g>
+                  <g class="river-flower river-flower-one"><path d="M193 590q2-30 5-48m-5 30-17-14m18 22 17-17" /><circle cx="198" cy="535" r="8" /><circle cx="188" cy="540" r="6" /><circle cx="208" cy="540" r="6" /></g>
+                  <g class="river-flower river-flower-two"><path d="M1102 585q-1-28-4-46m4 29-16-15m16 22 17-16" /><circle cx="1098" cy="532" r="8" /><circle cx="1088" cy="537" r="6" /><circle cx="1108" cy="537" r="6" /></g>
+                  <!-- Lily pads are positioned from the river route in script.js, so they stay on the water responsively. -->
+                  <g class="river-lily river-lily-one" data-river-progress="0.31" data-river-offset="-18"><ellipse cx="0" cy="0" rx="30" ry="15" /><path d="M0 0l12-13" /></g>
+                  <g class="river-lily river-lily-two" data-river-progress="0.72" data-river-offset="18"><ellipse cx="0" cy="0" rx="25" ry="13" /><path d="M0 0l11-11" /></g>
+                </g>
+
+                <!-- Invisible reference route used to place every boat on the actual river. -->
+                <path id="river-boat-route" class="river-boat-route" pathLength="1000" d="M620 293C595 330 610 365 695 414C755 464 790 514 767 565C740 620 610 652 625 720C643 742 735 750 828 760" />
+              </svg>
+
+              <div class="river-boats" id="river-boats" aria-label="Paper boats with messages"></div>
+
+              <div class="river-letter-modal" id="river-letter-modal" role="dialog" aria-modal="true" aria-labelledby="river-letter-title" hidden>
+                <div class="river-letter-card">
+                  <div class="river-letter-boat" id="river-letter-boat" aria-hidden="true"></div>
+                  <p class="river-letter-kicker">booouuuut</p>
+                  <h3 id="river-letter-title">generic message... idk bro </h3>
+                  <p class="river-letter-message" id="river-letter-message"></p>
+                  <button class="river-letter-close" id="river-letter-close" type="button">close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="cats-page" id="cats-page" aria-labelledby="cats-page-title" hidden>
+          <div class="cats-page-wash" aria-hidden="true"></div>
+          <div class="cats-page-inner">
+            <button class="cats-return" id="cats-return-to-world" type="button">back home ♡</button>
+
+            <header class="cats-header">
+              <p class="cats-eyebrow">welcome to their tiny kingdom</p>
+              <h2 id="cats-page-title">two little idiots ♡</h2>
+              <p class="cats-intro">tap the cats and watch the two little idiots react</p>
+            </header>
+
+            <div class="cats-world" id="cats-world">
+              <svg class="cats-scene" id="cats-scene" viewBox="0 0 1200 760" preserveAspectRatio="none" role="img" aria-labelledby="cats-scene-title cats-scene-desc">
+                <title id="cats-scene-title"></title>
+                <desc id="cats-scene-desc">Two little cartoon cats sit in a cozy garden with a tree, flowers, and a bowl. Tap the cats for a tiny reaction.</desc>
+                <defs>
+                  <linearGradient id="cats-sky-wash" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0" stop-color="#cfe7ee" />
+                    <stop offset="1" stop-color="#f7e7c2" />
+                  </linearGradient>
+                  <linearGradient id="cats-grass-wash" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0" stop-color="#a9d19d" />
+                    <stop offset="1" stop-color="#78ad7d" />
+                  </linearGradient>
+                  <radialGradient id="cats-sun-wash">
+                    <stop offset="0" stop-color="#fff7bf" stop-opacity=".98" />
+                    <stop offset=".7" stop-color="#ffd889" stop-opacity=".55" />
+                    <stop offset="1" stop-color="#ffd889" stop-opacity="0" />
+                  </radialGradient>
+                  <pattern id="cats-paper-grain" width="32" height="32" patternUnits="userSpaceOnUse">
+                    <circle cx="6" cy="8" r=".8" fill="#52795d" opacity=".1" />
+                    <circle cx="24" cy="26" r=".7" fill="#52795d" opacity=".08" />
+                    <path d="M3 29 11 27M25 5l5-1" stroke="#52795d" stroke-width=".7" opacity=".07" />
+                  </pattern>
+                </defs>
+
+                <rect class="cats-sky" width="1200" height="760" />
+                <circle class="cats-sun" cx="1012" cy="132" r="165" />
+                <path class="cats-cloud cats-cloud-one" d="M94 165q9-34 42-25 16-34 50-6 37-15 47 24h21v11H76v-11Z" />
+                <path class="cats-cloud cats-cloud-two" d="M820 225q8-28 37-21 14-29 45-4 34-15 43 22h20v10H808v-7Z" />
+                <path class="cats-back-hill" d="M0 360q145-105 304-26 133 66 270-8 144-78 292 13 132 80 334-5v426H0Z" />
+                <path class="cats-ground" d="M0 482q137-70 287-8 135 56 276-8 158-72 303 16 139 85 334 3v275H0Z" />
+                <path class="cats-ground-paper" d="M0 482q137-70 287-8 135 56 276-8 158-72 303 16 139 85 334 3v275H0Z" />
+
+                <g class="cats-tree" aria-hidden="true">
+                  <path class="cats-tree-trunk" d="M157 490q-14-125 11-239h57q21 115 5 239Z" />
+                  <path class="cats-tree-branch" d="M188 300q-38-47-66-57m70 64q48-50 76-64m-73 79q-4-71 3-111" />
+                  <path class="cats-tree-roots" d="M181 486q-27 23-52 29m67-29q27 23 53 29" />
+                  <circle class="cats-tree-leaf cats-tree-leaf-one" cx="111" cy="209" r="61" />
+                  <circle class="cats-tree-leaf cats-tree-leaf-two" cx="191" cy="164" r="78" />
+                  <circle class="cats-tree-leaf cats-tree-leaf-three" cx="271" cy="220" r="64" />
+                  <circle class="cats-tree-fruit" cx="149" cy="196" r="7" /><circle class="cats-tree-fruit" cx="230" cy="142" r="7" />
+                </g>
+
+                <g class="cats-bushes" aria-hidden="true">
+                  <path d="M40 545q-12-45 32-51 7-38 44-17 24-35 56 2 40-5 39 42-13 34-70 32Z" />
+                  <path d="M1010 535q-11-42 29-49 9-34 42-14 25-30 52 4 34-4 34 37-12 31-63 29Z" />
+                </g>
+                <path class="cats-grass-tufts" d="M92 604q-4-35-14-52m15 33 18-15m-18 28-19-12M1058 610q4-38 14-57m-12 38-20-17m17 31 20-14M280 536q-3-28-12-43m12 27 17-15m-17 27-17-12" aria-hidden="true" />
+
+                <g class="cats-flower" aria-hidden="true">
+                  <path d="M1019 607q-2-39-4-66m4 43-21-18m21 27 21-19" />
+                  <circle class="cats-flower-petal" cx="1015" cy="532" r="12" /><circle class="cats-flower-petal" cx="1001" cy="541" r="10" /><circle class="cats-flower-petal" cx="1029" cy="541" r="10" /><circle class="cats-flower-center" cx="1015" cy="541" r="7" />
+                </g>
+
+                <g class="cats-bowl" aria-hidden="true">
+                  <path class="cats-bowl-body" d="M892 578h93q-5 49-47 49-42 0-46-49Z" />
+                  <path class="cats-bowl-rim" d="M885 578q8-15 53-15t54 15q-8 17-54 17t-53-17Z" />
+                  <path class="cats-bowl-food" d="M913 575q12-24 25 0 12-28 25 0" />
+                </g>
+
+                <g class="cats-character cats-cat-me" id="cats-cat-me" data-cat-id="me" role="button" tabindex="0" aria-label="Tap the orange cat">
+                  <title>Tap the orange cat</title>
+                  <ellipse class="cats-shadow" cx="430" cy="638" rx="120" ry="19" />
+                  <path class="cats-tail" d="M510 590q74 17 62-43-6-28-34-29" />
+                  <path class="cats-body" d="M333 553q0-30 22-45 30-20 75-20t75 20q22 15 22 45v65q0 57-97 57t-97-57Z" />
+                  <ellipse class="cats-belly" cx="430" cy="587" rx="49" ry="54" />
+                  <path class="cats-leg" d="M362 605v46q4 13 19 0v-43m78 0v43q15 13 19 0v-46" />
+                  <path class="cats-head" d="M342 480q-10-36 13-64l-3-43 38 27q39-12 80 0l37-27-3 43q23 28 13 64-13 47-87 47t-88-47Z" />
+                  <path class="cats-ear-inner" d="m360 399 27 27m100-27-27 27" />
+                  <g class="cats-eyes"><circle cx="396" cy="478" r="10" /><circle cx="464" cy="478" r="10" /><circle class="cats-pupil" cx="398" cy="481" r="4" /><circle class="cats-pupil" cx="466" cy="481" r="4" /></g>
+                  <path class="cats-nose" d="m430 494 8 0-4 6Z" /><path class="cats-mouth" d="M434 500q-8 10-16 2m16-2q8 10 16 2" />
+                  <path class="cats-whiskers" d="m390 500-36-6m36 15-34 7m84-16 36-6m-36 16 34 7" />
+                  <ellipse class="cats-paw" cx="374" cy="650" rx="16" ry="11" />
+                  <ellipse class="cats-paw" cx="486" cy="650" rx="16" ry="11" />
+                  <path class="cats-touch-paw cats-touch-paw-left" d="M505 598q21-12 34 7-4 14-23 9" />
+                  <circle class="cats-collar" cx="430" cy="544" r="10" />
+                  <path class="cats-blink" d="M386 478q10 8 20 0m45 0q10 8 20 0" />
+                </g>
+
+                <g class="cats-character cats-cat-her" id="cats-cat-her" data-cat-id="her" role="button" tabindex="0" aria-label="Tap the cream cat">
+                  <title>Tap the white cat</title>
+                  <ellipse class="cats-shadow" cx="730" cy="638" rx="120" ry="19" />
+                  <path class="cats-tail" d="M650 590q-74 17-62-43 6-28 34-29" />
+                  <path class="cats-body" d="M633 553q0-30 22-45 30-20 75-20t75 20q22 15 22 45v65q0 57-97 57t-97-57Z" />
+                  <ellipse class="cats-belly" cx="730" cy="587" rx="49" ry="54" />
+                  <path class="cats-leg" d="M662 605v46q4 13 19 0v-43m78 0v43q15 13 19 0v-46" />
+                  <path class="cats-head" d="M642 480q-10-36 13-64l-3-43 38 27q39-12 80 0l37-27-3 43q23 28 13 64-13 47-87 47t-88-47Z" />
+                  <path class="cats-ear-inner" d="m660 399 27 27m100-27-27 27" />
+                  <g class="cats-eyes"><circle cx="696" cy="478" r="10" /><circle cx="764" cy="478" r="10" /><circle class="cats-pupil" cx="694" cy="481" r="4" /><circle class="cats-pupil" cx="762" cy="481" r="4" /></g>
+                  <path class="cats-nose" d="m730 494 8 0-4 6Z" /><path class="cats-mouth" d="M734 500q-8 10-16 2m16-2q8 10 16 2" />
+                  <path class="cats-whiskers" d="m690 500-36-6m36 15-34 7m84-16 36-6m-36 16 34 7" />
+                  <ellipse class="cats-paw" cx="674" cy="650" rx="16" ry="11" />
+                  <ellipse class="cats-paw" cx="786" cy="650" rx="16" ry="11" />
+                  <path class="cats-touch-paw cats-touch-paw-right" d="M655 598q-21-12-34 7 4 14 23 9" />
+                  <circle class="cats-collar cats-collar-her" cx="730" cy="544" r="10" />
+                  <path class="cats-blink" d="M686 478q10 8 20 0m45 0q10 8 20 0" />
+                </g>
+
+                <g class="cats-hearts" aria-hidden="true"><text x="570" y="297">♡</text><text x="615" y="263">♡</text><text x="660" y="297">♡</text></g>
+                <g class="cats-flowers-small" aria-hidden="true"><circle cx="300" cy="602" r="7" /><circle cx="318" cy="606" r="6" /><circle cx="309" cy="591" r="6" /><path d="M309 615v-29" /></g>
+              </svg>
+
+              <div class="cats-special-note" id="cats-special-note" role="status" aria-live="polite" hidden>
+                <p id="cats-special-message">look at these two idiots ♡</p>
+              </div>
+            </div>
+
+            <div class="cats-controls">
+              <p class="cats-hint" id="cats-hint">tap either cat for a tiny reaction</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="house-page" id="house-page" aria-labelledby="house-page-title" hidden>
+          <div class="house-page-wash" aria-hidden="true"></div>
+          <div class="house-page-inner">
+            <button class="house-return" id="house-return-to-world" type="button">&#8592; back to the little world</button>
+
+            <header class="house-header">
+              <p class="house-eyebrow">our crib</p>
+              <h2 id="house-page-title">you are my home <span aria-hidden="true">&#127968;</span></h2>
+              <p class="house-intro">come in, look around, and tap the little things waiting for you</p>
+            </header>
+
+            <div class="house-room-wrap">
+              <svg class="house-room" viewBox="0 0 1200 760" role="img" aria-labelledby="house-room-title house-room-desc">
+                <title id="house-room-title">OUR house?</title>
+                <desc id="house-room-desc">check the window, lamp, sofa, bookshelf, photo, and letter on the table</desc>
+                <defs>
+                  <linearGradient id="room-wall-wash" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff6e5" /><stop offset="1" stop-color="#f9e6cf" /></linearGradient>
+                  <linearGradient id="room-floor-wash" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d9a477" /><stop offset="1" stop-color="#ba795d" /></linearGradient>
+                  <linearGradient id="room-window-view" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c8e1df" /><stop offset="1" stop-color="#f4d3ad" /></linearGradient>
+                  <filter id="room-shadow" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="9" stdDeviation="9" flood-color="#704d43" flood-opacity=".18" /></filter>
+                  <filter id="lamp-glow" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="18" /></filter>
+                  <pattern id="room-paper-grain" width="30" height="30" patternUnits="userSpaceOnUse"><circle cx="5" cy="8" r=".8" fill="#8d826e" opacity=".12" /><circle cx="21" cy="24" r=".7" fill="#8d826e" opacity=".1" /><path d="M2 27 10 25M24 4l5-1" stroke="#8d826e" stroke-width=".7" opacity=".08" /></pattern>
+                </defs>
+
+                <rect class="room-wall" width="1200" height="570" rx="8" />
+                <rect class="room-wall-paper" width="1200" height="570" />
+                <path class="room-corner-line" d="M812 0v570" />
+                <rect class="room-floor" y="570" width="1200" height="190" />
+                <path class="room-rug" d="M245 685q355-52 711 0-42 47-353 51-313-4-358-51Z" />
+
+                <g class="room-window-object house-object" data-room-object="window" role="button" tabindex="0" aria-label="Open the window message">
+                  <title>Open the window message</title>
+                  <rect class="window-frame-shadow" x="72" y="116" width="322" height="310" rx="12" />
+                  <rect class="room-window-frame" x="84" y="104" width="300" height="300" rx="8" />
+                  <rect class="room-window-view" x="104" y="124" width="260" height="260" rx="3" /> 
+                  <path class="view-hill" d="M104 300q56-63 105-24 48-57 89-4 32-27 66 5v107H104Z" />
+                  <circle class="view-moon" cx="295" cy="180" r="28" />
+                  <path class="window-cross" d="M234 124v260M104 254h260" />
+                  <path class="window-sill" d="M62 408h344l-18 24H80Z" />
+                  <path class="curtain curtain-left" d="M69 111q48 67 30 221-3 44 22 91-42-7-69-48 20-139-13-264Z" />
+                  <path class="curtain curtain-right" d="M399 111q-48 67-30 221 3 44-22 91 42-7 69-48-20-139 13-264Z" />
+                  <path class="curtain-tie curtain-tie-left" d="M78 309q34 12 57-8" /><path class="curtain-tie curtain-tie-right" d="M390 309q-34 12-57-8" />
+                </g>
+
+                <g class="room-photo-object house-object" data-room-object="photo" role="button" tabindex="0" aria-label="Open the framed photo">
+                  <title>Open the framed photo</title>
+                  <rect class="photo-frame-shadow" x="470" y="122" width="164" height="136" rx="6" /><rect class="room-photo-frame" x="478" y="112" width="164" height="136" rx="5" />
+                  <rect class="photo-mat" x="491" y="125" width="138" height="110" rx="2" /><image class="room-photo-image" href="assets/house-photo.png" x="495" y="129" width="130" height="102" preserveAspectRatio="xMidYMid slice" />
+                  <path class="photo-glint" d="m493 134 27-9" />
+                </g>
+
+                <g class="room-lamp-object house-object" data-room-object="lamp" role="button" tabindex="0" aria-label="Open the lamp message">
+                  <title>Open the lamp message</title>
+                  <circle class="lamp-halo" cx="1000" cy="229" r="116" /><path class="lamp-shade" d="M923 184h154l-22 101H945Z" /><path class="lamp-shade-line" d="M936 205h128M946 254h108" />
+                  <path class="lamp-stem" d="M1000 285v147" /><ellipse class="lamp-base" cx="1000" cy="438" rx="65" ry="12" /><circle class="lamp-light" cx="1000" cy="216" r="17" />
+                </g>
+
+                <g class="room-bookshelf-object house-object" data-room-object="bookshelf" role="button" tabindex="0" aria-label="Open the bookshelf memories">
+                  <title>Open the bookshelf memories</title>
+                  <path class="bookshelf-body" d="M850 170h174v343H850Z" /><path class="bookshelf-top" d="M834 166h207l-14 18H848Z" /><path class="shelf-line" d="M858 266h158m-158 112h158m-158 112h158" />
+                  <path class="book book-one" d="M870 224v-45h21v45Z" /><path class="book book-two" d="M897 224v-58h18v58Z" /><path class="book book-three" d="M921 224v-38h27v38Z" />
+                  <path class="book book-four" d="M867 337v-54h18v54Z" /><path class="book book-five" d="M891 337v-41h26v41Z" /><path class="book book-six" d="M924 337v-62h17v62Z" />
+                  <path class="book book-seven" d="M869 450v-51h26v51Z" /><path class="book book-eight" d="M902 450v-65h17v65Z" /><path class="book book-nine" d="M926 450v-43h28v43Z" />
+                  <path class="shelf-plant" d="M976 215q-4-35 9-47m-9 31q-22-11-24-29m25 20q22-15 28-29" /><circle class="shelf-pot" cx="977" cy="222" r="14" />
+                </g>
+
+                <g class="room-sofa-object house-object" data-room-object="sofa" role="button" tabindex="0" aria-label="Open the sofa message">
+                  <title>Open the sofa message</title>
+                  <path class="sofa-shadow" d="M321 598q35-39 108-35h363q89-4 119 35-92 25-274 24-209 0-316-24Z" /><path class="sofa-back" d="M337 420q0-45 47-45h422q52 0 52 48v113H337Z" />
+                  <path class="sofa-seat" d="M319 510q0-25 31-25h495q36 0 36 29v90H319Z" /><path class="sofa-arm sofa-arm-left" d="M319 510q-28 7-31 37l-8 75h77v-81q0-25-38-31Z" /><path class="sofa-arm sofa-arm-right" d="M881 510q28 7 31 37l8 75h-77v-81q0-25 38-31Z" />
+                  <path class="sofa-seam" d="M589 495v97m-181-96q36 26 75 1m288 0q-37 26-75 1" /><path class="cushion cushion-one" d="M402 430q0-22 25-25h116q23 3 23 25v65H402Z" /><path class="cushion cushion-two" d="M634 430q0-22 25-25h116q23 3 23 25v65H634Z" />
+                  <path class="sofa-leg" d="M350 614v25m512-25v25" /><path class="throw-blanket" d="M754 385q74 26 95 104l-46 26q-19-52-77-78Z" />
+                </g>
+
+                <g class="room-table-object house-object" data-room-object="letter" role="button" tabindex="0" aria-label="Open the letter on the table">
+                  <title>Open the letter on the table</title>
+                  <ellipse class="table-shadow" cx="585" cy="687" rx="170" ry="25" /><path class="table-top" d="M420 605q167-23 330 0l-19 32q-146 22-292 0Z" /><path class="table-leg" d="M472 626 451 732m238-106 26 106" />
+                  <path class="letter-paper" d="M531 575q41-15 86 0l-7 37q-38 12-79 0Z" /><path class="letter-line" d="m547 588 52-3m-50 12 42-2" /><path class="letter-heart" d="m574 619 5-5 5 5-5 6Z" />
+                </g>
+
+                <g class="room-plant" aria-hidden="true"><path class="plant-pot" d="M110 613h86l-12 70h-62Z" /><path class="plant-leaves" d="M153 614q-30-44 2-91m-2 75q34-38 32-67m-32 54q-35-21-43-54m43 16q17-42 8-66" /></g>
+                <g class="room-dust" aria-hidden="true"><circle cx="420" cy="246" r="4" /><circle cx="690" cy="177" r="3" /><circle cx="760" cy="316" r="4" /><circle cx="450" cy="355" r="2.5" /><circle cx="785" cy="228" r="2.5" /></g>
+              </svg>
+
+              <div class="house-note" id="house-note" role="status" aria-live="polite">
+                <div class="house-note-top"><span id="house-note-label">A NOTE FROM INSIDE</span><button id="house-note-close" type="button" aria-label="Close the note">&#215;</button></div>
+                <h3 id="house-note-title">everything in here is a little bit of us</h3>
+                <p id="house-note-copy">tap the window, lamp, sofa, bookshelf, photo, or letter. there are a few things i wanted you to find.</p>
+                <p class="house-note-detail" id="house-note-detail">go look around.</p>
+              </div>
+            </div>
+
+            <section class="house-letter" id="house-letter" aria-labelledby="house-letter-title">
+              <div class="letter-tape" aria-hidden="true"></div>
+              <p class="house-letter-kicker">the letter on the table</p>
+              <h3 id="house-letter-title">if my home had a name. it'd be yours</h3>
+              <div class="house-letter-copy" id="house-letter-copy"></div>
+              <p class="house-letter-signoff">forever, your hubby<span aria-hidden="true">&#9825;</span></p>
+            </section>
+
+            <div class="house-ending"><p>this little house will be here whenever u need it<br> also there's 6 things to click in the house</p><button class="house-return house-return-bottom" id="house-return-bottom" type="button">&#8592; wander back outside</button></div>
+          </div>
+        </section>
+
+        <section class="sun-page" id="sun-page" aria-label="You're my sunshine" hidden>
+          <div class="sunset-rays" aria-hidden="true"></div>
+          <div class="sunset-sphere" aria-hidden="true"></div>
+          <div class="sun-particles" aria-hidden="true">
+            <span>✦</span><span>·</span><span>✧</span><span>·</span><span>✦</span><span>·</span>
+          </div>
+
+          <div class="sun-content">
+            <button class="sun-return" id="sun-return-to-world" type="button">← back to the little world</button>
+
+            <header class="sun-header">
+              <p class="sun-eyebrow">a little collection of thoughts</p>
+              <h2 id="sun-page-title">you are my sunshine <span aria-hidden="true">☀️</span></h2>
+              <p class="sun-intro">some things i've been wanting you to know...</p>
+              <p class="sun-scroll-note" aria-hidden="true">scroll down ↓</p>
+            </header>
+
+            <div class="sun-thoughts" aria-label="Thoughts about you">
+              <article class="sun-thought thought-left">
+                <span class="thought-doodle" aria-hidden="true">☼</span>
+                <p>you make my days bright like a sun over the horizon.</p>
+              </article>
+              <article class="sun-thought thought-right">
+                <span class="thought-doodle" aria-hidden="true">✧</span>
+                <p>my eyes sparkle like looking at the sun when i see you.</p>
+              </article>
+              <article class="sun-thought thought-left thought-wide">
+                <span class="thought-doodle" aria-hidden="true">☀</span>
+                <p>your beauty is blinding like the sun's rays, but no matter how dangerous, i still wanna keep looking.</p>
+              </article>
+              <article class="sun-thought thought-right">
+                <span class="thought-doodle" aria-hidden="true">·˚</span>
+                <p>even the most ordinary days feel a little more special when you're in them.</p>
+              </article>
+              <article class="sun-thought thought-left">
+                <span class="thought-doodle" aria-hidden="true">☼</span>
+                <p>if my day ever feels cloudy, somehow you always find a way to bring a little sunshine into it.</p>
+              </article>
+              <article class="sun-thought thought-right thought-wide">
+                <span class="thought-doodle" aria-hidden="true">✦</span>
+                <p>i could have the worst day ever, and one conversation with you could change its entire direction.</p>
+              </article>
+              <article class="sun-thought thought-left">
+                <span class="thought-doodle" aria-hidden="true">☀</span>
+                <p>you're the kind of sunshine i never get tired of waking up to.</p>
+              </article>
+              <article class="sun-thought thought-right thought-wide">
+                <span class="thought-doodle" aria-hidden="true">✧</span>
+                <p>i don't think you realise just how much happiness you bring into my life, even through the smallest things.</p>
+              </article>
+            </div>
+
+            <div class="sun-bottom-glow" aria-hidden="true">☼</div>
+
+            <section class="sun-photo-reveal" id="sun-photo-reveal" aria-labelledby="sun-photo-title">
+              <p class="sun-photo-kicker" id="sun-photo-title">scratch the image</p>
+              <div class="photo-frame">
+                <div class="scratch-photo-stage" id="scratch-photo-stage">
+                  <img
+                    class="scratch-photo-image"
+                    id="scratch-photo-image"
+                    src="assets/IMG-20260530-WA0018.jpg"
+                    alt="Fatima in a red scarf waiting underneath the scratch layer"
+                    draggable="false"
+                  />
+                  <canvas
+                    class="scratch-canvas"
+                    id="scratch-canvas"
+                    role="img"
+                    aria-label="Scratch this covered photograph to reveal it"
+                    aria-describedby="scratch-hint"
+                  ></canvas>
+                  <span class="scratch-complete-glow" aria-hidden="true"></span>
+                </div>
+                <p class="scratch-hint" id="scratch-hint">scratch gently hi lol</p>
+                <p class="sun-photo-caption">a little reminder of how you brighten my days♡</p>
+              </div>
+            </section>
+          </div>
+        </section>
+      </main>
+
+      <div class="bottom-scribble" aria-hidden="true">*･ﾟﾟ･*:.｡..｡.:*･ﾟ</div>
+    </div>
+
+    <svg class="svg-definitions" aria-hidden="true" focusable="false">
+      <defs>
+        <symbol id="cat-sitting" viewBox="0 0 140 130">
+          <path class="cat-line" d="M36 50 27 20l25 18c9-5 26-5 35 0l26-18-9 31c8 8 11 20 8 31-4 16-19 25-43 25S30 98 28 82c-2-12 1-24 8-32Z" />
+          <path class="cat-fill" d="M38 50 30 27l21 15c8-4 24-4 32 0l22-15-8 24c9 7 13 20 10 31-4 15-18 22-42 22S32 96 30 82c-2-12 1-24 8-32Z" />
+          <path class="cat-face" d="M42 70c3-5 7-5 10 0m30 0c3-5 7-5 10 0M66 78q4 5 8 0m-13 8q9 7 18 0" />
+          <circle class="cat-eye" cx="50" cy="60" r="3" />
+          <circle class="cat-eye" cx="89" cy="60" r="3" />
+          <path class="cat-paw" d="M50 104q-3 9 4 10m38-10q3 9-4 10" />
+          <path class="cat-whisker" d="M43 77 24 73m21 9-18 4m72-9 19-4m-21 12 18 4" />
+        </symbol>
+        <symbol id="cat-face" viewBox="0 0 140 130">
+          <path class="cat-line" d="M31 45 24 18l25 15c12-6 30-6 42 0l25-15-7 28c7 9 9 20 6 31-5 16-21 25-45 25s-40-9-45-25c-3-11-1-22 6-32Z" />
+          <path class="cat-fill cat-fill-light" d="M34 46 29 26l20 12c11-5 25-5 36 0l20-12-5 22c8 8 10 20 6 31-5 14-19 20-39 20s-34-6-39-20c-4-11-2-23 6-33Z" />
+          <circle class="cat-eye" cx="51" cy="61" r="3" />
+          <circle class="cat-eye" cx="89" cy="61" r="3" />
+          <path class="cat-face" d="M65 74q5 5 10 0m-16 8q11 8 22 0" />
+          <path class="cat-whisker" d="M43 76 22 72m23 12-20 5m72-13 21-4m-23 12 20 5" />
+        </symbol>
+      </defs>
+    </svg>
+
+    <script src="script.js"></script>
+  </body>
+</html>
